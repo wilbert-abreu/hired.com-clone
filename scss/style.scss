@@ -1,0 +1,124 @@
+//colors
+$color_link_water_approx: #d8e6f3;
+$color_link_grey_approx: #BABBC1;
+$color_mine_shaft_approx: #333;
+$gallery: #efefef;
+$color_danube_approx: #639bcf;
+$color_fuscous_gray_approx: #555;
+$color_steel_blue_approx: rgb(51,122,183);
+$white: #fff;
+$color_chathams_blue_approx: #204d74;
+$color_tundora_approx: #444;
+$color_tapa_approx: #777;
+$color_alto_approx: #ddd;
+$nav_color: #36373E;
+$no_color:rgba(0,0,0,0);
+//fonts
+$font_0: Open Sans;
+$font_1: sans-serif;
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	margin-bottom: 220px;
+	font-family: $font_0, $font_1;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 220px;
+	background-color: $color_mine_shaft_approx;
+	color: $gallery;
+	padding: 30px 0;
+	a {
+		color: $color_danube_approx;
+		&:hover {
+			color: $color_link_water_approx;
+		}
+	}
+}
+@media only screen and(max-width: 768px) {
+	body {
+		margin-bottom: 400px;
+	}
+	.footer {
+		height: 400px;
+	}
+	.dropdown-menu>li>a {
+		color: $color_link_water_approx;
+	}
+}
+
+.well {
+	background-color: transparent;
+}
+.lead {
+	color: $color_fuscous_gray_approx;
+}
+.btn-lg {
+	padding: 14px 20px;
+	margin-right: 20px;
+}
+.navbar {
+	background-color: $nav_color;
+  .logo {
+    width:130px;
+  }
+	a {
+		color: $color_link_grey_approx;
+		&:hover {
+			color: $white;
+      transition-delay: .1s; /* delays for 1 second */
+-webkit-transition-delay: .1s; /* for Safari & Chrome */
+		}
+	}
+}
+.nav>li>a {
+	&:focus {
+		background-color: $no_color;
+		color: $white;
+	}
+	&:hover {
+		background-color: $no_color;
+		color: $white;
+	}
+}
+
+
+.meta {
+	margin-bottom: 1em;
+	color: $color_tapa_approx;
+	li {
+		border-right: 1px solid $color_alto_approx;
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+.nav .open>a {
+	background-color: $color_chathams_blue_approx;
+	color: $white;
+	&:focus {
+		background-color: $color_chathams_blue_approx;
+		color: $white;
+	}
+	&:hover {
+		background-color: $color_chathams_blue_approx;
+		color: $white;
+	}
+}
+.navbar-toggle .icon-bar {
+	background-color: $color_link_water_approx;
+}
+.features .glyphicon {
+	font-size: 32px;
+}
+.about .fa-rocket {
+	font-size: 64px;
+}
+.posts h1 a {
+	color: $color_tundora_approx;
+}
